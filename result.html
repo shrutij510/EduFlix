@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<head>
+    <html lang="en" dir="ltr">
+    <meta charset="utf-8">
+    <style type="text/css">
+
+      body
+      {
+        border: 0px transparent black;
+           padding: 2500;
+           margin: 0;
+        background: url(bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;	
+        background-color: bisque;      }
+
+      h1
+      {
+        font-size:50px;
+        margin-top:0;
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        text-shadow:20px 0 40px #000000;
+        letter-spacing:6px;
+        text-decoration:none;
+        color:#AAA;
+      }
+
+      #banner
+      {
+        background-size: contain;
+        text-align:center;
+        background-repeat:no-repeat;
+        border-radius:50px;
+        padding: 100;
+
+      }
+
+      .lead
+      {
+        background-color:rgba(236, 240, 240, 0.199);
+        background-blend-mode: lighten;
+        border-radius:0px;
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        font-size: medium;
+
+      }
+
+    <title>Welcome</title>
+    </style>
+</head>
+
+<body>
+    <br/>
+    <br/>
+    <br/>
+
+    <h1 style="text-align:center;"><font color="white"> Welcome to EduFlix </h1>
+        <div id = "banner">
+        <br/>
+        <h3 style="text-align:center;"><font color="black"> Here are your recommendations.... </h3>
+        {% for table in tables %}
+            <h2>{{titles[loop.index]}}</h2>
+            {{ table|safe }}
+        {% endfor %}
+        </font>
+        </div>
+        
+           <h6>
+
+</body>
+
+</html>

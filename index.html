@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+    <head>
+        <html lang="en" dir="ltr">
+        <meta charset="utf-8">
+        <style type="text/css">
+
+	      body
+	      {
+			border: 0px transparent black;
+	   		padding: 2500;
+	   		margin: 0;
+	    	background: url(bg.png);
+	    	background-repeat: no-repeat;
+	    	background-size: cover;	
+		    background-color: bisque;      }
+
+	      h1
+	      {
+	        font-size:50px;
+	        margin-top:0;
+	        font-family: 'Times New Roman', Times, serif, sans-serif;
+	        text-shadow:20px 0 40px #000000;
+	        letter-spacing:6px;
+	        text-decoration:none;
+	        color:#AAA;
+	      }
+
+	      #banner
+	      {
+	        background-size: contain;
+	        text-align:center;
+	        background-repeat:no-repeat;
+	        border-radius:50px;
+	        padding: 100;
+
+	      }
+
+	      .lead
+	      {
+	        background-color:rgba(236, 240, 240, 0.199);
+            background-blend-mode: lighten;
+	        border-radius:0px;
+	        font-family: 'Times New Roman', Times, serif, sans-serif;
+			font-size: medium;
+
+	      }
+
+        <title>Welcome</title>
+		</style>
+    </head>
+
+    <body>
+        <br/>
+        <br/>
+        <br/>
+
+        <h1 style="text-align:center;"><font color="white"> Welcome to EduFlix </h1>
+			<div id = "banner">
+	        <br/>
+			
+			<img src="courses.png" alt="udemy courses" style="width:650px;height:auto;" border="2"/>
+
+				<br/><p class="lead"><font color="black"><strong>The idea is that you select a course you finished and then<br/> receive a recommendation list containing similar courses that you can explore now <br/></strong></p>
+                    <form name="passdata" action="/about" method="post">
+					<input type="text" name="Course Name" placeholder="Enter Udemy Course Name" size="80" spellcheck required>
+                <br/>
+				<button style = "background-color: rgb(228, 202, 172); border-color: #000000; box-shadow: 1px #000000;" type="submit" class="btn btn-success"><font color="black"><strong>RECOMMEND</strong></button>
+	   		</form>
+			</div>
+		    
+	   		<h6>
+	
+	</body>
+
+</html>
